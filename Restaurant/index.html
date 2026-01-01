@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h1>My Restaurant</h1>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h2 class="animate">Delicious Food, Every Day</h2>
+        <p class="animate">Fresh ingredients. Tasty meals. Memorable experience.</p>
+        <a href="#menu" class="btn-hero animate">View Menu</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-wrapper">
+        <h2 class="fade-in">About Us</h2>
+        <p class="fade-in">At My Restaurant, we serve the freshest ingredients and delicious meals that bring people together. Our chefs are passionate and dedicated to creating unforgettable dining experiences.</p>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="section-wrapper">
+        <h2 class="fade-in">Our Menu</h2>
+
+        <div class="filter-buttons fade-in">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="burger">Burger</button>
+            <button class="filter-btn" data-category="pizza">Pizza</button>
+            <button class="filter-btn" data-category="rice">Rice</button>
+            <button class="filter-btn" data-category="kottu">Kottu</button>
+            <button class="filter-btn" data-category="dessert">Dessert</button>
+            <button class="filter-btn" data-category="chicken">Chicken</button>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-card" data-category="burger">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy beef burger with fresh ingredients.</p>
+                <span>Rs. 750.00</span>
+            </div>
+
+            <div class="menu-card" data-category="pizza">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Cheesy pizza with delicious toppings.</p>
+                <span>Rs. 1500.00</span>
+            </div>
+
+            <div class="menu-card" data-category="rice">
+                <img src="images/fried_rice.jpg" alt="Fried Rice">
+                <h3>Fried Rice</h3>
+                <p>Delicious fried rice with fresh ingredients.</p>
+                <span>Rs. 700.00</span>
+            </div>
+
+            <div class="menu-card" data-category="chicken rice">
+                <img src="images/chicken_fried_rice.jpg" alt="Chicken Fried Rice">
+                <h3>Chicken Fried Rice</h3>
+                <p>Delicious fried rice with fried chicken.</p>
+                <span>Rs. 900.00</span>
+            </div>
+
+            <div class="menu-card" data-category="kottu chicken">
+                <img src="images/chicken_kottu.jpg" alt="Chicken Kottu">
+                <h3>Chicken Kottu</h3>
+                <p>Hot & tasty kottu with fried chicken.</p>
+                <span>Rs. 1100.00</span>
+            </div>
+
+            <div class="menu-card" data-category="kottu">
+                <img src="images/cheese_kottu.jpg" alt="Cheese Kottu">
+                <h3>Cheese Kottu</h3>
+                <p>Cheesy kottu with extra cheese.</p>
+                <span>Rs. 1400.00</span>
+            </div>
+        </div>
+        <p id="no-items" class="no-item">No item found</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-wrapper fade-in">
+        <h2>✉️ Contact Us</h2>
+        <p>📍 Colombo, Sri Lanka</p>
+        <p>📞 077 456 2789</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 My Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
